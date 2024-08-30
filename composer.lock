@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6053edd79cdd9f714ee445109a2670e",
+    "content-hash": "1a4adbb6ba316fd0266744a431b8a222",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -336,16 +336,16 @@
         },
         {
             "name": "nullpunkt/lz-string-php",
-            "version": "dev-master",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nullpunkt/lz-string-php.git",
-                "reference": "699a9574713a38af62af2fc6287cc7ba8edd0dc8"
+                "reference": "bf4ae48f8a164bc6e95f5e7a2c6da45907ac3ba9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nullpunkt/lz-string-php/zipball/699a9574713a38af62af2fc6287cc7ba8edd0dc8",
-                "reference": "699a9574713a38af62af2fc6287cc7ba8edd0dc8",
+                "url": "https://api.github.com/repos/nullpunkt/lz-string-php/zipball/bf4ae48f8a164bc6e95f5e7a2c6da45907ac3ba9",
+                "reference": "bf4ae48f8a164bc6e95f5e7a2c6da45907ac3ba9",
                 "shasum": ""
             },
             "require": {
@@ -355,7 +355,6 @@
                 "monolog/monolog": "^1.17",
                 "phpunit/phpunit": "~9.5"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -378,9 +377,9 @@
             "description": "PHP Class implementation of LZ-String javascript.",
             "support": {
                 "issues": "https://github.com/nullpunkt/lz-string-php/issues",
-                "source": "https://github.com/nullpunkt/lz-string-php/tree/master"
+                "source": "https://github.com/nullpunkt/lz-string-php/tree/1.3.0"
             },
-            "time": "2021-06-17T07:56:13+00:00"
+            "time": "2021-06-17T07:52:00+00:00"
         },
         {
             "name": "psr/http-client",
@@ -659,9 +658,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "nullpunkt/lz-string-php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
