@@ -1,0 +1,22 @@
+{
+  "name": "belokdwi/jembatanfktp",
+  "description": "Wrapper for BPJS Indonesia Web Service API v3",
+  "type": "package",
+  "authors": [
+    {
+      "name": "Belok Dwi",
+      "email": "belokdwiimam@gmail.com"
+    }
+  ],
+  "license": "mit",
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Jembatanfktp\\Bpjs\\": "src/"
+    }
+  },
+  "require": {
+    "guzzlehttp/guzzle": "^6.0|^7.2",
+    "nullpunkt/lz-string-php": "dev-master"
+  }
+}
