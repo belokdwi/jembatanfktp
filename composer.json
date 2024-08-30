@@ -12,7 +12,7 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "Jembatanfktp\\Bpjs\\": "src/"
+      "Belokdwi\\Bpjs\\": "src/"
     }
   },
   "require": {
