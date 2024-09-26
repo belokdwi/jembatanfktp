@@ -74,4 +74,17 @@ class Pendaftaran extends BasePcare
 
         return $this->response;
     }
+
+    /**
+     * Get Data Pendaftaran by Nomor Urut.
+     *
+     * @param string $nomorUrut $date
+     * @return void
+     */
+    public function getPendaftaranNomorUrut(string $nomorUrut, string $date)
+    {
+        $this->setResponse($this->nomorUrut($nomorUrut)->tanggalDaftar($date)->index());
+
+        return $this->response;
+    }
 }

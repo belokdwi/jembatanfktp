@@ -59,8 +59,10 @@ class BasePcare extends BpjsService
 
     protected function setResponse($response)
     {
+        //dd($this->getHeaders());
         $this->response = $response;
-
+        $this->response['endpoint'] = "{$this->getBaseUrl()}/{$this->getServiceName()}/{$this->feature}";
+        //dd($this->response);
         $responseCode = $this->response['metaData']['code'];
         $successCodes = [
             \Illuminate\Http\Response::HTTP_OK,
@@ -68,7 +70,7 @@ class BasePcare extends BpjsService
         ];
 
         if (!in_array($responseCode, $successCodes)) {
-            throw new \ErrorException($this->response['metaData']['message'], $this->response['metaData']['code']);
+            throw new \ErrorException(json_encode($this->response), $this->response['metaData']['code']);
         }
     }
 }

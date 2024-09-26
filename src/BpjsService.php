@@ -242,6 +242,8 @@ class BpjsService
         if (!empty($headers)) {
             $this->headers = array_merge($this->headers, $headers);
         }
+        //dd($this->headers);
+        //dd(json_encode($data));
         try {
             $response = $this->clients->request(
                 'POST',
