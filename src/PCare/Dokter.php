@@ -19,7 +19,7 @@ class Dokter extends BasePcare
     public function getDokter($offset = null, $limit = null)
     {
         $this->setOffset($offset);
-        $this->setKeyword($limit);
+        $this->setLimit($limit);
 
         $this->setResponse($this->index($this->offset, $this->limit));
 
