@@ -368,8 +368,10 @@ class BpjsService
                 $content = json_decode($body->getContents());
                 if ($content) {
                     $response = $content->response ?: null;
-                    if (is_object($response)) {
-                        $message = $response->message;
+                    $metaData = $content->metaData ?: null;
+                    if (is_object($content->metaData)) {
+                        $message = $metaData->message;
+                        $code = $metaData->code;
                     }
                 }
             }
